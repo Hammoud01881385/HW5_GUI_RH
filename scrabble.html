@@ -1,0 +1,46 @@
+<!--
+Name: Rami Hammoud rami_hammoud@student.uml.edu
+Date: 12/18/23
+File: scrabble.html
+GUI Assignment: HW5 Implementing a Bit of Scrabble with Drag-and-Drop
+Description: Skeleton for the structure of my Scrabble page with headers and buttons.
+!-->
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <title>Scrabble Game</title>
+   <!-- Linking style sheet -->
+   <link rel="stylesheet" href="css/style.css">
+ </head>
+ <body>
+   <h1>SCRABBLE</h1>
+   <div class="total-points">Total Points: <span>0</span></div>
+    <!-- Where string being constructed and points will be displayed: -->
+   <div class="string-display">
+    <h5>Word Created:</p>
+        <div class="displayed-word"></div>
+    </div>
+    <div class="displayed-points"></div>
+   <div class="gameboard">
+     <!-- Squares generated dynamically here -->
+   </div>
+ 
+   <div class="buttons">
+     <button class="deal-button">Deal</button>
+     <button class="restart-button">Restart</button>
+   </div>
+    <br>
+
+   <div class="rack">
+     <img src="img/scrabble-tile-holder.png" alt="Scrabble Tile Holder" class="rack-img">
+     <div class="rack-tiles">
+       <!-- Random tiles generated here -->
+     </div>
+   </div>
+ 
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+   <script src="js/script.js"></script>
+ </body>
+ </html>

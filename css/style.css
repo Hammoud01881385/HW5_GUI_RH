@@ -1,0 +1,76 @@
+
+/* Name: Rami Hammoud rami_hammoud@student.uml.edu
+Date: 12/18/23
+File: style.css
+GUI Assignment: HW5 Implementing a Bit of Scrabble with Drag-and-Drop
+Description:  Styling for all tiles, gameboard, rack, and buttons*/
+
+/* Standard styling for page */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #d4e0ba;
+    font-size: xx-large;
+  }
+  /* Gameboard modifications to size and align center */
+  .gameboard {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .square {
+    width: 80px;
+    height: 86px;
+    border: 1px solid #000;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .buttons {
+    margin-top: 20px;
+  }
+  .rack {
+    position: relative;
+
+    /* Add other styling as needed */
+}
+/* Makes sure tiles do not overlap and sizes them correctly */
+.draggable-tile {
+    position: absolute;
+    width: 80px; 
+    height: 86px; 
+    z-index: 1000; 
+}
+/* size of image rack */
+  .rack-img {
+    width: 600px;
+    height: auto;
+  }
+
+  .buttons {
+    margin-top: 20px;
+}
+
+/* Make buttons appealing */
+.deal-button,
+.restart-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: #3498db; 
+    color: white; 
+    transition: background-color 0.3s ease;
+}
+/* Hover effect to buttons */
+.deal-button:hover,
+.restart-button:hover {
+    background-color: #2980b9; /* Button background color on hover */
+}
